@@ -11,7 +11,7 @@ public class task9 {
         Scanner scanner = new Scanner(System.in);
 
         // Запрашиваем у пользователя ввод даты
-        System.out.print("Введите дату в формате (гггг-мм-дд): ");
+        System.out.print("enter the date in the format (yyyy-mm-dd): ");
         String dateString = scanner.nextLine();
 
         try {
@@ -30,37 +30,38 @@ public class task9 {
             String dayOfWeekName;
             switch (dayOfWeek) {
                 case Calendar.SUNDAY:
-                    dayOfWeekName = "Воскресенье";
+                    dayOfWeekName = "sunday";
                     break;
                 case Calendar.MONDAY:
-                    dayOfWeekName = "Понедельник";
+                    dayOfWeekName = "monday";
                     break;
                 case Calendar.TUESDAY:
-                    dayOfWeekName = "Вторник";
+                    dayOfWeekName = "TUESDAY";
                     break;
                 case Calendar.WEDNESDAY:
-                    dayOfWeekName = "Среда";
+                    dayOfWeekName = "WEDNESDAY";
                     break;
                 case Calendar.THURSDAY:
-                    dayOfWeekName = "Четверг";
+                    dayOfWeekName = "THURSDAY";
                     break;
                 case Calendar.FRIDAY:
-                    dayOfWeekName = "Пятница";
+                    dayOfWeekName = "FRIDAY";
                     break;
                 case Calendar.SATURDAY:
-                    dayOfWeekName = "Суббота";
+                    dayOfWeekName = "SATURDAY";
                     break;
                 default:
-                    dayOfWeekName = "Ошибка: недопустимый день недели";
+                    dayOfWeekName = "wrong format";
             }
 
             // Выводим результат
-            System.out.println("День недели для введенной даты: " + dayOfWeekName);
+            System.out.println("Day of the week: " + dayOfWeekName);
         } catch (Exception e) {
-            System.out.println("Ошибка: неверный формат даты.");
+            System.out.println("wrong format");
         }
 
         // Закрываем Scanner
         scanner.close();
     }
 }
+
