@@ -1,6 +1,6 @@
 package com.example.demo;
 
-public class Main {
+public class task24 {
     public static void main(String[] args) {
         SmartForm smartForm = new SmartForm();
         smartForm.input();
