@@ -2,7 +2,7 @@ package com.example.demo;
 
 import java.util.Scanner;
 
-public class GCDRecursive {
+public class task39_rec {
     public static int findGCD(int num1, int num2) {
         if (num2 == 0) {
             return num1;
@@ -26,3 +26,4 @@ public class GCDRecursive {
         scanner.close();
     }
 }
+
