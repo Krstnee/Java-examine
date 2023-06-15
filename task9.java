@@ -5,7 +5,7 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.Scanner;
 
-public class DayOfWeekFinder {
+public class task9 {
     public static void main(String[] args) {
         // Создаем объект типа Scanner для чтения ввода пользователя
         Scanner scanner = new Scanner(System.in);
