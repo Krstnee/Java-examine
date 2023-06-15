@@ -7,12 +7,12 @@ class Form {
 
     public void input() {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Введите пароль: ");
+        System.out.print("enter a password: ");
         password = scanner.nextLine();
     }
 
     public void submit() {
-        System.out.println("Форма отправлена.");
+        System.out.println("form was submitted.");
     }
 
     public String getPassword() {
@@ -30,9 +30,12 @@ class SmartForm extends Form {
     }
 
     public void displaySavedPassword() {
-        System.out.println("Сохраненный пароль: " + savedPassword);
+        System.out.println("saves password: " + savedPassword);
     }
 }
+
+
+
 
 
 
