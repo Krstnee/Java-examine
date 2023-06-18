@@ -64,4 +64,3 @@ public class task9 {
         scanner.close();
     }
 }
-

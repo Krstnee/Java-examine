@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Random numbers</title>
+</head>
+<body>
+<form action="/" method="post">
+  <label for="range">Enter number range:</label>
+  <input type="text" id="range" name="range">
+  <button type="submit">Submit</button>
+</form>
+<p th:text="'Average: ' + ${average}"></p>
+<h2>Generated Numbers:</h2>
+<ul>
+  <th:block th:each="number : ${numbers}">
+    <li th:text="${number}"></li>
+  </th:block>
+</ul>
+</body>
+</html>
